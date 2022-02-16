@@ -15,6 +15,9 @@ class CreateOrchestrionsTable extends Migration
     {
         Schema::create('orchestrions', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('no');
+            $table->string('name');
+            $table->boolean('have_flg');
             $table->timestamps();
         });
     }
